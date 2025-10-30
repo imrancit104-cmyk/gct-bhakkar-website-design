@@ -1,6 +1,8 @@
 .main-continer{
-    background-image: url('/gct-bhakkar-website-design/assets/images/background\ picture.jpg');
-    background-color: black
+    background-image: url('/assets/images/background\ picture.jpg');
+    background-repeat: no-repeat;
+    width: 80vw;
+    margin: auto;
 }
 .hero-section,
 .hero-section .carousel,
