@@ -1,7 +1,6 @@
 .main-continer{
     background-image: url('/assets/images/background\ picture.jpg');
-    background-repeat: no-repeat;
-    width: 80vw;
+    background-size: cover;
     margin: auto;
 }
 .hero-section,
@@ -247,7 +246,7 @@ color: rgb(98, 63, 184);
 
     /* Title band */
     .red-title {
-      background: #8E1F2F;
+      background: #3c2ecd;
       color: #fff;
       display: inline-block;
       padding: 8px 15px;
