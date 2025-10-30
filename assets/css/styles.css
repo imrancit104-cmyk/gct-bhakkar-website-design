@@ -17,7 +17,10 @@
   object-fit: cover;
   object-position: top;
 }
-
+.transparent-slide {
+  opacity: 80%;
+  background-color: black;
+}
 /* INDICATORS */
 .carousel-indicators [data-bs-target] {
   width: 10px;        
@@ -45,28 +48,63 @@
     height: 14px;
   }
 }
-.hover-card {
-  height: 100px;          
+/* Cards Section */
+.hero-cards-section .hover-card {
+  background-color: rgba(0, 123, 255, 0.8); 
+  border: 1px solid #fff;                
+  border-radius: 0;                       
   overflow: hidden;
+  height: 80px;                           
   position: relative;
-  transition: height 0.3s ease;
+  transition: transform 0.3s ease, height 0.3s ease;
 }
 
-.hover-card .card-text {
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.hero-cards-section .hover-card:hover {
+  transform: translateY(-40px); 
+  z-index: 2;
+  height: 240px;
+}
+
+.hero-cards-section .hover-card .card-title {
+  color: #fff;
+  margin-bottom: 0;
   padding: 10px;
 }
 
-.hover-card:hover {
-  height: 200px;         
+
+.hero-cards-section .hover-card .card-text {
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  transition: opacity 0.3s ease;
 }
 
-.hover-card:hover .card-text {
+.hero-cards-section .hover-card:hover .card-text {
   opacity: 1;
 }
+
+.card-hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;                
+  transition: opacity 0.3s ease;
+  z-index: 0;                 
+}
+
+/* Show image on hover */
+.hover-card:hover .card-hover-img {
+  opacity: 0.25;               
+}
+
+
 
 
 .main-card {
@@ -157,3 +195,80 @@ color: rgb(98, 63, 184);
      transition: transform 0.3s ease-in-out;
      border-bottom: 2px solid transparent;
 }
+
+  body {
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .campus-life {
+      padding: 60px 0;
+    }
+
+   
+    .section-title {
+      font-size: 45px;
+      font-weight: 700;
+    }
+
+    .section-descrip {
+      width: 80%;
+      font-size: 18px;
+    }
+
+    /* Cards container */
+    .campus-cards {
+      border-left: 14px solid #2A323A;
+      border-right: 14px solid #2A323A;
+      background: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    /* Each card */
+    .campus-card {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .campus-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Image style */
+    .campus-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    /* Title band */
+    .red-title {
+      background: #8E1F2F;
+      color: #fff;
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    /* Text content */
+    .campus-card p {
+      color: #111;
+      font-size: 15px;
+    }
+
+    .read-link {
+      color: #111;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .read-link:hover {
+      text-decoration: underline;
+    }
