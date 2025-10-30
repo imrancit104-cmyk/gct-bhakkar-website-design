@@ -1,0 +1,65 @@
+.hero-section,
+.hero-section .carousel,
+.hero-section .carousel-item,
+.hero-section .hero-img {
+  height: 100vh;
+}
+.hero-section {
+  position: relative;
+}
+.hero-img {
+  object-fit: cover;
+  object-position: top;
+}
+
+/* INDICATORS */
+.carousel-indicators [data-bs-target] {
+  width: 10px;        
+  height: 10px;       
+  border-radius: 50%; 
+}
+.carousel-indicators {
+  gap: 7px;
+  bottom: 80px;    
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  opacity: 0.6;          
+}
+.carousel-indicators .active {
+  opacity: 1;                             
+  width: 13px;                            
+  height: 13px;
+  background-color: #007efc;              
+  transition: all 0.3s ease-in-out;      
+}
+@media (max-width: 768px) {
+  .carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+  }
+}
+.hover-card {
+  height: 100px;          
+  overflow: hidden;
+  position: relative;
+  transition: height 0.3s ease;
+}
+
+.hover-card .card-text {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.hover-card:hover {
+  height: 200px;         
+}
+
+.hover-card:hover .card-text {
+  opacity: 1;
+}
+
+
