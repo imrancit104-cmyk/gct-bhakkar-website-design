@@ -51,7 +51,7 @@
    color: black;
 }
 .main-continer{
-    background-image: url('/assets/images/background\ picture.jpg');
+    background-image: url(/gct-bhakkar-website-design/assets/images/background\ picture.jpg);
     background-size: cover;
     margin: auto;
 }
