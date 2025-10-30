@@ -6,27 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <title>GCT - Bhakkar</title>
 </head>
 
 <body>
     <!-- Header By Abdul-Rasheed -->
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="./index.html">GCT Bhakkar</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">GCT Bhakkar</a>
+
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center gap-3">
-                    <li class="nav-item"><a class="nav-link" href="#./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#./admissions.html">Admissions</a></li>
                     <li class="nav-item"><a class="nav-link" href="#./programs.html">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#./about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#./campus-life.html">Campus Life</a></li>
                     <li class="nav-item"><a class="nav-link" href="#./contact.html">Contact</a></li>
-                    <button class="btn btn-sm btn-success" type="button"><a class="text-white nav-link" href="./apply-now.html">Apply Now</a></button>
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-success text-white" href="#./apply-now.html">Apply Now</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
 
     <main>
         <!-- Hero Section Assigned to Abdul-Saboor -->
