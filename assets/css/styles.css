@@ -196,7 +196,7 @@
 color: rgb(98, 63, 184);
 }
 .h23{
-    background-color: rgb(79, 79, 196);
+    background-color: rgb(9, 9, 231);
     display: inline;
     border-radius: 50px;
     padding: 8px 20px;
@@ -207,13 +207,15 @@ color: rgb(98, 63, 184);
     border-top: 3px solid rgb(126, 51, 217);
      box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
 }
-.card{
+.card-section{
     padding-top: 30px;
     height: 300px;
     border-top: 3px solid rgb(76, 93, 220); 
     margin-top: 10px;
     background-color: rgb(240, 239, 238);
     border-bottom: 5px solid rgb(126, 51, 217);
+    position: relative;
+    transition: transform 0.35s ease;
 }
 .icon-img{
     width: 60px;
@@ -327,3 +329,21 @@ section{
     .read-link:hover {
       text-decoration: underline;
     }
+.why-choose-us{
+    background: linear-gradient( 350deg, #a9b8f0 0%, #daddf4 100%);
+border-top: 1px solid #a9b8f0;
+}
+.semicircle {
+    position: absolute;
+    top: 0px;
+    left: 15%;
+      width: 71%;
+      height: 100px;   
+     border: 3px solid  rgb(76, 93, 220);
+    background-color: rgb(207, 182, 238);
+     border-top: none;
+      border-radius: 0px 0px 200px 200px; 
+    }
+.main-card:hover .pin-icon  {
+    transform: translateY(-5px);
+}
